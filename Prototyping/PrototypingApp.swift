@@ -18,12 +18,19 @@ struct PrototypingApp: App {
 }
 
 struct MyViewControllerRepresentable: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> MyViewController {
-        return MyViewController()
+    typealias UIViewControllerType = Snapkit2ViewController
+
+    func makeUIViewController(context: Context) -> UIViewControllerType {
+//        return UIStoryboard(name: "StackButtonsViewController", bundle: nil).instantiateInitialViewController()!
+        .init()
     }
 
-    func updateUIViewController(_ uiViewController: MyViewController, context: Context) {
+    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
         // Update the view controller if needed
     }
 }
 
+@available(iOS 17, *)
+#Preview {
+    UIViewController()
+}
