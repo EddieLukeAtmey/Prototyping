@@ -7,10 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		651555992C9C3D8D0026C589 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651555982C9C3D8D0026C589 /* MyCustomView.swift */; };
+		651E8FE32C6B112A00F3A98D /* LineChartView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FE22C6B112A00F3A98D /* LineChartView2.swift */; };
+		651E8FE52C6B122200F3A98D /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FE42C6B122200F3A98D /* ChartData.swift */; };
+		651E8FE72C6B134600F3A98D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FE62C6B134600F3A98D /* ChartViewController.swift */; };
+		651E8FE92C6B3E4200F3A98D /* MyChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FE82C6B3E4200F3A98D /* MyChartView.swift */; };
+		651E8FEC2C6B43CF00F3A98D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FEB2C6B43CF00F3A98D /* UIColor+Extension.swift */; };
+		651E8FEE2C6B595300F3A98D /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FED2C6B595300F3A98D /* LineChartView.swift */; };
 		652565062C50D5AD000BA24C /* StackButtonsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652565052C50D5AD000BA24C /* StackButtonsViewController.storyboard */; };
+		653ADD982C919CFB002C75A3 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 653ADD972C919CFB002C75A3 /* CryptoSwift */; };
 		655936812C5249010096F710 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 655936802C5249010096F710 /* SnapKit */; };
 		655936842C52491B0096F710 /* SnapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655936832C52491B0096F710 /* SnapkitViewController.swift */; };
 		655D71B42C64E92100C23B6E /* SwiftCombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D71B32C64E92100C23B6E /* SwiftCombineViewController.swift */; };
+		656E2F912CC66CBD00462888 /* ABProfilePictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2F902CC66CBD00462888 /* ABProfilePictureViewController.swift */; };
+		656E2F942CC66D2C00462888 /* NSObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2F932CC66D2C00462888 /* NSObject+Extension.swift */; };
+		656E2F9A2CC7AE9700462888 /* ABSwitchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2F992CC7AE9700462888 /* ABSwitchButton.swift */; };
+		656E2F9C2CC7B72800462888 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656E2F9B2CC7B72800462888 /* CustomViewController.swift */; };
 		6576D3E52C4F5A2B00761785 /* PrototypingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3E42C4F5A2B00761785 /* PrototypingApp.swift */; };
 		6576D3E72C4F5A2B00761785 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3E62C4F5A2B00761785 /* ContentView.swift */; };
 		6576D3E92C4F5A2C00761785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6576D3E82C4F5A2C00761785 /* Assets.xcassets */; };
@@ -18,12 +30,36 @@
 		6576D3F42C4F5A6800761785 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3F32C4F5A6800761785 /* MyViewController.swift */; };
 		6576D3F62C50D28B00761785 /* StackButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3F52C50D28B00761785 /* StackButtonsViewController.swift */; };
 		658CCFEB2C5B7FF400ABE656 /* Snapkit2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */; };
+		65A0102A2CA2D8A4006DE40F /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 65A010292CA2D8A4006DE40F /* PanModal */; };
+		65A0102C2CA2DF95006DE40F /* PanModalHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */; };
+		65D78B242CCA39E90096ADCC /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 65D78B232CCA39E90096ADCC /* SwiftMessages */; };
+		65D78B262CCA39E90096ADCC /* SwiftMessages-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 65D78B252CCA39E90096ADCC /* SwiftMessages-Dynamic */; };
+		65D78B2F2CCA55990096ADCC /* CustomToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D78B2A2CCA55990096ADCC /* CustomToast.swift */; };
+		65D78B302CCA55990096ADCC /* CustomToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D78B2B2CCA55990096ADCC /* CustomToastView.swift */; };
+		65D78B322CCA55990096ADCC /* ToastData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D78B2D2CCA55990096ADCC /* ToastData.swift */; };
+		65D78B352CCA55A30096ADCC /* CustomToastViewTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D78B342CCA55A30096ADCC /* CustomToastViewTestController.swift */; };
+		65D78B392CCA5D230096ADCC /* CustomToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D78B382CCA5D230096ADCC /* CustomToastView.xib */; };
+		65E209532C89C38400E899BD /* CardViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E209522C89C38400E899BD /* CardViewerViewController.swift */; };
+		65E209552C89C9BA00E899BD /* Rotate3DImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E209542C89C9BA00E899BD /* Rotate3DImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		651555982C9C3D8D0026C589 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
+		651E8FE22C6B112A00F3A98D /* LineChartView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView2.swift; sourceTree = "<group>"; };
+		651E8FE42C6B122200F3A98D /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
+		651E8FE62C6B134600F3A98D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		651E8FE82C6B3E4200F3A98D /* MyChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChartView.swift; sourceTree = "<group>"; };
+		651E8FEB2C6B43CF00F3A98D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		651E8FED2C6B595300F3A98D /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		652565052C50D5AD000BA24C /* StackButtonsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackButtonsViewController.storyboard; sourceTree = "<group>"; };
+		653ADD9A2C919D0D002C75A3 /* Encryptor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Encryptor.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		653ADD9C2C92DC79002C75A3 /* Random.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Random.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		655936832C52491B0096F710 /* SnapkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapkitViewController.swift; sourceTree = "<group>"; };
 		655D71B32C64E92100C23B6E /* SwiftCombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCombineViewController.swift; sourceTree = "<group>"; };
+		656E2F902CC66CBD00462888 /* ABProfilePictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABProfilePictureViewController.swift; sourceTree = "<group>"; };
+		656E2F932CC66D2C00462888 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
+		656E2F992CC7AE9700462888 /* ABSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABSwitchButton.swift; sourceTree = "<group>"; };
+		656E2F9B2CC7B72800462888 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
 		6576D3E12C4F5A2B00761785 /* Prototyping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototyping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6576D3E42C4F5A2B00761785 /* PrototypingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypingApp.swift; sourceTree = "<group>"; };
 		6576D3E62C4F5A2B00761785 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +69,14 @@
 		6576D3F32C4F5A6800761785 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		6576D3F52C50D28B00761785 /* StackButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackButtonsViewController.swift; sourceTree = "<group>"; };
 		658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapkit2ViewController.swift; sourceTree = "<group>"; };
+		65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanModalHostingController.swift; sourceTree = "<group>"; };
+		65D78B2A2CCA55990096ADCC /* CustomToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToast.swift; sourceTree = "<group>"; };
+		65D78B2B2CCA55990096ADCC /* CustomToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToastView.swift; sourceTree = "<group>"; };
+		65D78B2D2CCA55990096ADCC /* ToastData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastData.swift; sourceTree = "<group>"; };
+		65D78B342CCA55A30096ADCC /* CustomToastViewTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToastViewTestController.swift; sourceTree = "<group>"; };
+		65D78B382CCA5D230096ADCC /* CustomToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomToastView.xib; sourceTree = "<group>"; };
+		65E209522C89C38400E899BD /* CardViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewerViewController.swift; sourceTree = "<group>"; };
+		65E209542C89C9BA00E899BD /* Rotate3DImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotate3DImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,13 +84,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D78B262CCA39E90096ADCC /* SwiftMessages-Dynamic in Frameworks */,
 				655936812C5249010096F710 /* SnapKit in Frameworks */,
+				653ADD982C919CFB002C75A3 /* CryptoSwift in Frameworks */,
+				65D78B242CCA39E90096ADCC /* SwiftMessages in Frameworks */,
+				65A0102A2CA2D8A4006DE40F /* PanModal in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		651555972C9C3D760026C589 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				656E2F982CC7AE7000462888 /* CustomSwitch */,
+				651555982C9C3D8D0026C589 /* MyCustomView.swift */,
+				656E2F9B2CC7B72800462888 /* CustomViewController.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		651E8FE12C6B112000F3A98D /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				651E8FE22C6B112A00F3A98D /* LineChartView2.swift */,
+				651E8FE82C6B3E4200F3A98D /* MyChartView.swift */,
+				651E8FED2C6B595300F3A98D /* LineChartView.swift */,
+				651E8FE42C6B122200F3A98D /* ChartData.swift */,
+				651E8FE62C6B134600F3A98D /* ChartViewController.swift */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		651E8FEA2C6B43BD00F3A98D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				651E8FEB2C6B43CF00F3A98D /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		652565042C50D59F000BA24C /* Stoaryboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +133,29 @@
 			path = Stoaryboard;
 			sourceTree = "<group>";
 		};
+		653ADD992C919D00002C75A3 /* Encryptor */ = {
+			isa = PBXGroup;
+			children = (
+				653ADD9A2C919D0D002C75A3 /* Encryptor.playground */,
+			);
+			path = Encryptor;
+			sourceTree = "<group>";
+		};
+		653ADD9B2C92DC6B002C75A3 /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				653ADD992C919D00002C75A3 /* Encryptor */,
+				653ADD9C2C92DC79002C75A3 /* Random.playground */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
 		655936822C5249110096F710 /* Snapkit */ = {
 			isa = PBXGroup;
 			children = (
 				655936832C52491B0096F710 /* SnapkitViewController.swift */,
 				658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */,
+				656E2F902CC66CBD00462888 /* ABProfilePictureViewController.swift */,
 			);
 			path = Snapkit;
 			sourceTree = "<group>";
@@ -70,6 +166,22 @@
 				655D71B32C64E92100C23B6E /* SwiftCombineViewController.swift */,
 			);
 			path = Combine;
+			sourceTree = "<group>";
+		};
+		656E2F922CC66D1E00462888 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				656E2F932CC66D2C00462888 /* NSObject+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		656E2F982CC7AE7000462888 /* CustomSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				656E2F992CC7AE9700462888 /* ABSwitchButton.swift */,
+			);
+			path = CustomSwitch;
 			sourceTree = "<group>";
 		};
 		6576D3D82C4F5A2B00761785 = {
@@ -91,6 +203,14 @@
 		6576D3E32C4F5A2B00761785 /* Prototyping */ = {
 			isa = PBXGroup;
 			children = (
+				65D78B282CCA55600096ADCC /* CustomToast */,
+				656E2F922CC66D1E00462888 /* Common */,
+				65A010272CA2D86D006DE40F /* PanModal */,
+				651555972C9C3D760026C589 /* CustomView */,
+				653ADD9B2C92DC6B002C75A3 /* Playground */,
+				65E209512C89C37000E899BD /* CardViewer */,
+				651E8FEA2C6B43BD00F3A98D /* Extensions */,
+				651E8FE12C6B112000F3A98D /* Chart */,
 				655D71B22C64E91300C23B6E /* Combine */,
 				655936822C5249110096F710 /* Snapkit */,
 				652565042C50D59F000BA24C /* Stoaryboard */,
@@ -113,6 +233,43 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		65A010272CA2D86D006DE40F /* PanModal */ = {
+			isa = PBXGroup;
+			children = (
+				65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */,
+			);
+			path = PanModal;
+			sourceTree = "<group>";
+		};
+		65D78B282CCA55600096ADCC /* CustomToast */ = {
+			isa = PBXGroup;
+			children = (
+				65D78B292CCA55990096ADCC /* CustomToastView */,
+				65D78B342CCA55A30096ADCC /* CustomToastViewTestController.swift */,
+			);
+			path = CustomToast;
+			sourceTree = "<group>";
+		};
+		65D78B292CCA55990096ADCC /* CustomToastView */ = {
+			isa = PBXGroup;
+			children = (
+				65D78B2A2CCA55990096ADCC /* CustomToast.swift */,
+				65D78B2B2CCA55990096ADCC /* CustomToastView.swift */,
+				65D78B2D2CCA55990096ADCC /* ToastData.swift */,
+				65D78B382CCA5D230096ADCC /* CustomToastView.xib */,
+			);
+			path = CustomToastView;
+			sourceTree = "<group>";
+		};
+		65E209512C89C37000E899BD /* CardViewer */ = {
+			isa = PBXGroup;
+			children = (
+				65E209522C89C38400E899BD /* CardViewerViewController.swift */,
+				65E209542C89C9BA00E899BD /* Rotate3DImageView.swift */,
+			);
+			path = CardViewer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,6 +288,10 @@
 			name = Prototyping;
 			packageProductDependencies = (
 				655936802C5249010096F710 /* SnapKit */,
+				653ADD972C919CFB002C75A3 /* CryptoSwift */,
+				65A010292CA2D8A4006DE40F /* PanModal */,
+				65D78B232CCA39E90096ADCC /* SwiftMessages */,
+				65D78B252CCA39E90096ADCC /* SwiftMessages-Dynamic */,
 			);
 			productName = Prototyping;
 			productReference = 6576D3E12C4F5A2B00761785 /* Prototyping.app */;
@@ -162,6 +323,9 @@
 			mainGroup = 6576D3D82C4F5A2B00761785;
 			packageReferences = (
 				6559367F2C5249010096F710 /* XCRemoteSwiftPackageReference "snapkit" */,
+				653ADD962C919CFB002C75A3 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				65A010282CA2D8A4006DE40F /* XCRemoteSwiftPackageReference "PanModal" */,
+				65D78B222CCA39E90096ADCC /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 			);
 			productRefGroup = 6576D3E22C4F5A2B00761785 /* Products */;
 			projectDirPath = "";
@@ -178,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				652565062C50D5AD000BA24C /* StackButtonsViewController.storyboard in Resources */,
+				65D78B392CCA5D230096ADCC /* CustomToastView.xib in Resources */,
 				6576D3ED2C4F5A2C00761785 /* Preview Assets.xcassets in Resources */,
 				6576D3E92C4F5A2C00761785 /* Assets.xcassets in Resources */,
 			);
@@ -190,13 +355,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D78B2F2CCA55990096ADCC /* CustomToast.swift in Sources */,
 				655936842C52491B0096F710 /* SnapkitViewController.swift in Sources */,
+				651E8FE32C6B112A00F3A98D /* LineChartView2.swift in Sources */,
+				65E209532C89C38400E899BD /* CardViewerViewController.swift in Sources */,
+				651E8FE92C6B3E4200F3A98D /* MyChartView.swift in Sources */,
+				651E8FEE2C6B595300F3A98D /* LineChartView.swift in Sources */,
+				65D78B302CCA55990096ADCC /* CustomToastView.swift in Sources */,
+				651E8FEC2C6B43CF00F3A98D /* UIColor+Extension.swift in Sources */,
 				6576D3E72C4F5A2B00761785 /* ContentView.swift in Sources */,
+				656E2F912CC66CBD00462888 /* ABProfilePictureViewController.swift in Sources */,
 				655D71B42C64E92100C23B6E /* SwiftCombineViewController.swift in Sources */,
+				65D78B322CCA55990096ADCC /* ToastData.swift in Sources */,
+				651E8FE52C6B122200F3A98D /* ChartData.swift in Sources */,
+				651555992C9C3D8D0026C589 /* MyCustomView.swift in Sources */,
+				65A0102C2CA2DF95006DE40F /* PanModalHostingController.swift in Sources */,
 				6576D3F42C4F5A6800761785 /* MyViewController.swift in Sources */,
+				65E209552C89C9BA00E899BD /* Rotate3DImageView.swift in Sources */,
+				656E2F942CC66D2C00462888 /* NSObject+Extension.swift in Sources */,
+				65D78B352CCA55A30096ADCC /* CustomToastViewTestController.swift in Sources */,
+				656E2F9C2CC7B72800462888 /* CustomViewController.swift in Sources */,
 				6576D3F62C50D28B00761785 /* StackButtonsViewController.swift in Sources */,
 				658CCFEB2C5B7FF400ABE656 /* Snapkit2ViewController.swift in Sources */,
 				6576D3E52C4F5A2B00761785 /* PrototypingApp.swift in Sources */,
+				651E8FE72C6B134600F3A98D /* ChartViewController.swift in Sources */,
+				656E2F9A2CC7AE9700462888 /* ABSwitchButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +596,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		653ADD962C919CFB002C75A3 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.3;
+			};
+		};
 		6559367F2C5249010096F710 /* XCRemoteSwiftPackageReference "snapkit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/snapkit/snapkit/";
@@ -421,13 +612,49 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		65A010282CA2D8A4006DE40F /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.7;
+			};
+		};
+		65D78B222CCA39E90096ADCC /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		653ADD972C919CFB002C75A3 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 653ADD962C919CFB002C75A3 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
 		655936802C5249010096F710 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6559367F2C5249010096F710 /* XCRemoteSwiftPackageReference "snapkit" */;
 			productName = SnapKit;
+		};
+		65A010292CA2D8A4006DE40F /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65A010282CA2D8A4006DE40F /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
+		};
+		65D78B232CCA39E90096ADCC /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65D78B222CCA39E90096ADCC /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+		65D78B252CCA39E90096ADCC /* SwiftMessages-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65D78B222CCA39E90096ADCC /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = "SwiftMessages-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

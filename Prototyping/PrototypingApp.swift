@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 
 @main
 struct PrototypingApp: App {
@@ -18,7 +19,7 @@ struct PrototypingApp: App {
 }
 
 struct MyViewControllerRepresentable: UIViewControllerRepresentable {
-    typealias UIViewControllerType = Snapkit2ViewController
+    typealias UIViewControllerType = CustomToastViewTestController
 
     func makeUIViewController(context: Context) -> UIViewControllerType {
 //        return UIStoryboard(name: "StackButtonsViewController", bundle: nil).instantiateInitialViewController()!
@@ -32,5 +33,5 @@ struct MyViewControllerRepresentable: UIViewControllerRepresentable {
 
 @available(iOS 17, *)
 #Preview {
-    UIViewController()
+    MyViewControllerRepresentable()
 }
