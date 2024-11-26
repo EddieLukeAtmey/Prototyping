@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6505A6022CE4A4C100B95B40 /* DecimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505A6012CE4A4C100B95B40 /* DecimalViewController.swift */; };
 		651555992C9C3D8D0026C589 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651555982C9C3D8D0026C589 /* MyCustomView.swift */; };
+		651B57E52CF0960D00C28D93 /* CustomNavigationBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B57E42CF0960D00C28D93 /* CustomNavigationBackViewController.swift */; };
+		651B57E72CF09C1F00C28D93 /* CustomInteractivePopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B57E62CF09C1F00C28D93 /* CustomInteractivePopTransition.swift */; };
+		651B57EA2CF09F1800C28D93 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 651B57E92CF09F1800C28D93 /* Then */; };
 		651E8FE32C6B112A00F3A98D /* LineChartView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FE22C6B112A00F3A98D /* LineChartView2.swift */; };
 		651E8FE52C6B122200F3A98D /* ChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FE42C6B122200F3A98D /* ChartData.swift */; };
 		651E8FE72C6B134600F3A98D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FE62C6B134600F3A98D /* ChartViewController.swift */; };
@@ -15,6 +19,10 @@
 		651E8FEC2C6B43CF00F3A98D /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FEB2C6B43CF00F3A98D /* UIColor+Extension.swift */; };
 		651E8FEE2C6B595300F3A98D /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651E8FED2C6B595300F3A98D /* LineChartView.swift */; };
 		652565062C50D5AD000BA24C /* StackButtonsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652565052C50D5AD000BA24C /* StackButtonsViewController.storyboard */; };
+		652D324A2CD0E78500DC54C6 /* PanModalHostingController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32492CD0E78500DC54C6 /* PanModalHostingController2.swift */; };
+		652D324D2CD0F4B900DC54C6 /* AtmCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D324C2CD0F4B900DC54C6 /* AtmCellContentView.swift */; };
+		652D324F2CD0FB4300DC54C6 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D324E2CD0FB4300DC54C6 /* UIView+Extension.swift */; };
+		652D32512CD0FD2E00DC54C6 /* BranchCellContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652D32502CD0FD2E00DC54C6 /* BranchCellContentView.swift */; };
 		653ADD982C919CFB002C75A3 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 653ADD972C919CFB002C75A3 /* CryptoSwift */; };
 		655936812C5249010096F710 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 655936802C5249010096F710 /* SnapKit */; };
 		655936842C52491B0096F710 /* SnapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655936832C52491B0096F710 /* SnapkitViewController.swift */; };
@@ -44,7 +52,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6505A6012CE4A4C100B95B40 /* DecimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalViewController.swift; sourceTree = "<group>"; };
 		651555982C9C3D8D0026C589 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
+		651B57E42CF0960D00C28D93 /* CustomNavigationBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBackViewController.swift; sourceTree = "<group>"; };
+		651B57E62CF09C1F00C28D93 /* CustomInteractivePopTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInteractivePopTransition.swift; sourceTree = "<group>"; };
 		651E8FE22C6B112A00F3A98D /* LineChartView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView2.swift; sourceTree = "<group>"; };
 		651E8FE42C6B122200F3A98D /* ChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartData.swift; sourceTree = "<group>"; };
 		651E8FE62C6B134600F3A98D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +63,10 @@
 		651E8FEB2C6B43CF00F3A98D /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		651E8FED2C6B595300F3A98D /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		652565052C50D5AD000BA24C /* StackButtonsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackButtonsViewController.storyboard; sourceTree = "<group>"; };
+		652D32492CD0E78500DC54C6 /* PanModalHostingController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanModalHostingController2.swift; sourceTree = "<group>"; };
+		652D324C2CD0F4B900DC54C6 /* AtmCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmCellContentView.swift; sourceTree = "<group>"; };
+		652D324E2CD0FB4300DC54C6 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		652D32502CD0FD2E00DC54C6 /* BranchCellContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchCellContentView.swift; sourceTree = "<group>"; };
 		653ADD9A2C919D0D002C75A3 /* Encryptor.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Encryptor.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		653ADD9C2C92DC79002C75A3 /* Random.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Random.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		655936832C52491B0096F710 /* SnapkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapkitViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +100,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D78B262CCA39E90096ADCC /* SwiftMessages-Dynamic in Frameworks */,
+				651B57EA2CF09F1800C28D93 /* Then in Frameworks */,
 				655936812C5249010096F710 /* SnapKit in Frameworks */,
 				653ADD982C919CFB002C75A3 /* CryptoSwift in Frameworks */,
 				65D78B242CCA39E90096ADCC /* SwiftMessages in Frameworks */,
@@ -95,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6505A6002CE4A4AD00B95B40 /* Decimal */ = {
+			isa = PBXGroup;
+			children = (
+				6505A6012CE4A4C100B95B40 /* DecimalViewController.swift */,
+			);
+			path = Decimal;
+			sourceTree = "<group>";
+		};
 		651555972C9C3D760026C589 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +157,15 @@
 			path = Stoaryboard;
 			sourceTree = "<group>";
 		};
+		652D324B2CD0F4A600DC54C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				652D324C2CD0F4B900DC54C6 /* AtmCellContentView.swift */,
+				652D32502CD0FD2E00DC54C6 /* BranchCellContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		653ADD992C919D00002C75A3 /* Encryptor */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,10 +201,20 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
+		656247252CDA3F8D00C2F7AC /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				651B57E42CF0960D00C28D93 /* CustomNavigationBackViewController.swift */,
+				651B57E62CF09C1F00C28D93 /* CustomInteractivePopTransition.swift */,
+			);
+			path = NavigationController;
+			sourceTree = "<group>";
+		};
 		656E2F922CC66D1E00462888 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				656E2F932CC66D2C00462888 /* NSObject+Extension.swift */,
+				652D324E2CD0FB4300DC54C6 /* UIView+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -203,6 +246,8 @@
 		6576D3E32C4F5A2B00761785 /* Prototyping */ = {
 			isa = PBXGroup;
 			children = (
+				6505A6002CE4A4AD00B95B40 /* Decimal */,
+				656247252CDA3F8D00C2F7AC /* NavigationController */,
 				65D78B282CCA55600096ADCC /* CustomToast */,
 				656E2F922CC66D1E00462888 /* Common */,
 				65A010272CA2D86D006DE40F /* PanModal */,
@@ -236,7 +281,9 @@
 		65A010272CA2D86D006DE40F /* PanModal */ = {
 			isa = PBXGroup;
 			children = (
+				652D324B2CD0F4A600DC54C6 /* Views */,
 				65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */,
+				652D32492CD0E78500DC54C6 /* PanModalHostingController2.swift */,
 			);
 			path = PanModal;
 			sourceTree = "<group>";
@@ -292,6 +339,7 @@
 				65A010292CA2D8A4006DE40F /* PanModal */,
 				65D78B232CCA39E90096ADCC /* SwiftMessages */,
 				65D78B252CCA39E90096ADCC /* SwiftMessages-Dynamic */,
+				651B57E92CF09F1800C28D93 /* Then */,
 			);
 			productName = Prototyping;
 			productReference = 6576D3E12C4F5A2B00761785 /* Prototyping.app */;
@@ -326,6 +374,7 @@
 				653ADD962C919CFB002C75A3 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
 				65A010282CA2D8A4006DE40F /* XCRemoteSwiftPackageReference "PanModal" */,
 				65D78B222CCA39E90096ADCC /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				651B57E82CF09F1800C28D93 /* XCRemoteSwiftPackageReference "Then" */,
 			);
 			productRefGroup = 6576D3E22C4F5A2B00761785 /* Products */;
 			projectDirPath = "";
@@ -357,6 +406,7 @@
 			files = (
 				65D78B2F2CCA55990096ADCC /* CustomToast.swift in Sources */,
 				655936842C52491B0096F710 /* SnapkitViewController.swift in Sources */,
+				6505A6022CE4A4C100B95B40 /* DecimalViewController.swift in Sources */,
 				651E8FE32C6B112A00F3A98D /* LineChartView2.swift in Sources */,
 				65E209532C89C38400E899BD /* CardViewerViewController.swift in Sources */,
 				651E8FE92C6B3E4200F3A98D /* MyChartView.swift in Sources */,
@@ -364,17 +414,23 @@
 				65D78B302CCA55990096ADCC /* CustomToastView.swift in Sources */,
 				651E8FEC2C6B43CF00F3A98D /* UIColor+Extension.swift in Sources */,
 				6576D3E72C4F5A2B00761785 /* ContentView.swift in Sources */,
+				651B57E52CF0960D00C28D93 /* CustomNavigationBackViewController.swift in Sources */,
 				656E2F912CC66CBD00462888 /* ABProfilePictureViewController.swift in Sources */,
+				652D324A2CD0E78500DC54C6 /* PanModalHostingController2.swift in Sources */,
 				655D71B42C64E92100C23B6E /* SwiftCombineViewController.swift in Sources */,
 				65D78B322CCA55990096ADCC /* ToastData.swift in Sources */,
 				651E8FE52C6B122200F3A98D /* ChartData.swift in Sources */,
 				651555992C9C3D8D0026C589 /* MyCustomView.swift in Sources */,
+				651B57E72CF09C1F00C28D93 /* CustomInteractivePopTransition.swift in Sources */,
 				65A0102C2CA2DF95006DE40F /* PanModalHostingController.swift in Sources */,
 				6576D3F42C4F5A6800761785 /* MyViewController.swift in Sources */,
 				65E209552C89C9BA00E899BD /* Rotate3DImageView.swift in Sources */,
 				656E2F942CC66D2C00462888 /* NSObject+Extension.swift in Sources */,
+				652D324D2CD0F4B900DC54C6 /* AtmCellContentView.swift in Sources */,
 				65D78B352CCA55A30096ADCC /* CustomToastViewTestController.swift in Sources */,
+				652D32512CD0FD2E00DC54C6 /* BranchCellContentView.swift in Sources */,
 				656E2F9C2CC7B72800462888 /* CustomViewController.swift in Sources */,
+				652D324F2CD0FB4300DC54C6 /* UIView+Extension.swift in Sources */,
 				6576D3F62C50D28B00761785 /* StackButtonsViewController.swift in Sources */,
 				658CCFEB2C5B7FF400ABE656 /* Snapkit2ViewController.swift in Sources */,
 				6576D3E52C4F5A2B00761785 /* PrototypingApp.swift in Sources */,
@@ -596,6 +652,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		651B57E82CF09F1800C28D93 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		653ADD962C919CFB002C75A3 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift";
@@ -631,6 +695,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		651B57E92CF09F1800C28D93 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 651B57E82CF09F1800C28D93 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
 		653ADD972C919CFB002C75A3 /* CryptoSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 653ADD962C919CFB002C75A3 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
