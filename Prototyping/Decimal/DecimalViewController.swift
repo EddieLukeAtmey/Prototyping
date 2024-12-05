@@ -7,10 +7,16 @@
 
 import UIKit
 import SnapKit
+import Then
 
 final class DecimalViewController: UIViewController {
-    let groupingSeparator = ","
-    let decimalSeparator = "."
+    let groupingSeparator = "."
+    let decimalSeparator = ","
+
+    let formatter = NumberFormatter().then {
+        $0.numberStyle = .decimal
+        $0.minimumFractionDigits = 0
+    }
 
     let tf = UITextField()
     let tf2 = UITextField()
@@ -20,6 +26,8 @@ final class DecimalViewController: UIViewController {
         view.addSubview(tf)
         view.addSubview(tf2)
         view.addSubview(lbResult)
+
+        print(view.bounds)
 
         tf.borderStyle = .roundedRect
         tf.delegate = self
@@ -91,16 +99,18 @@ extension DecimalViewController: UITextFieldDelegate {
     }
 
     private func decimalValue(for string: String?) -> Decimal? {
-        guard let string = string?.replacingOccurrences(of: groupingSeparator, with: "") else { return nil }
-        return Decimal(string: string)
+//        guard let string = string?.replacingOccurrences(of: groupingSeparator, with: "") else { return nil }
+        guard let string else { return nil }
+//        return Decimal(string: string)
+        let value = formatter.number(from: string)?.decimalValue
+        print("string: \(string) - decimalValue: \(value)")
+
+        return value
     }
 
     private func formattedString(for number: Decimal?, maximumFractionDigits: Int = 0) -> String? {
         guard let number else { return nil }
 
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.minimumFractionDigits = 0
         formatter.maximumFractionDigits = maximumFractionDigits
         formatter.groupingSeparator = groupingSeparator
         formatter.decimalSeparator = decimalSeparator

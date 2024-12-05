@@ -38,6 +38,8 @@
 		6576D3F42C4F5A6800761785 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3F32C4F5A6800761785 /* MyViewController.swift */; };
 		6576D3F62C50D28B00761785 /* StackButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3F52C50D28B00761785 /* StackButtonsViewController.swift */; };
 		658CCFEB2C5B7FF400ABE656 /* Snapkit2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */; };
+		658F8E842CF5EA4B005183F2 /* SwiftUIViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658F8E832CF5EA4B005183F2 /* SwiftUIViewContainer.swift */; };
+		658F8E862CF5EBF2005183F2 /* AnyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658F8E852CF5EBF2005183F2 /* AnyUIView.swift */; };
 		65A0102A2CA2D8A4006DE40F /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 65A010292CA2D8A4006DE40F /* PanModal */; };
 		65A0102C2CA2DF95006DE40F /* PanModalHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */; };
 		65D78B242CCA39E90096ADCC /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 65D78B232CCA39E90096ADCC /* SwiftMessages */; };
@@ -49,6 +51,10 @@
 		65D78B392CCA5D230096ADCC /* CustomToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65D78B382CCA5D230096ADCC /* CustomToastView.xib */; };
 		65E209532C89C38400E899BD /* CardViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E209522C89C38400E899BD /* CardViewerViewController.swift */; };
 		65E209552C89C9BA00E899BD /* Rotate3DImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E209542C89C9BA00E899BD /* Rotate3DImageView.swift */; };
+		65E7AAFC2D000EAA00363CBB /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E7AAFB2D000EAA00363CBB /* PhotoViewerViewController.swift */; };
+		65E7AAFF2D0010D800363CBB /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E7AAFE2D0010D800363CBB /* PhotoCell.swift */; };
+		65E7AB022D0160A900363CBB /* SkeletonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E7AB012D0160A900363CBB /* SkeletonTableViewController.swift */; };
+		65E7AB0B2D01611F00363CBB /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = 65E7AB0A2D01611F00363CBB /* SkeletonView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +90,8 @@
 		6576D3F32C4F5A6800761785 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
 		6576D3F52C50D28B00761785 /* StackButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackButtonsViewController.swift; sourceTree = "<group>"; };
 		658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapkit2ViewController.swift; sourceTree = "<group>"; };
+		658F8E832CF5EA4B005183F2 /* SwiftUIViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewContainer.swift; sourceTree = "<group>"; };
+		658F8E852CF5EBF2005183F2 /* AnyUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUIView.swift; sourceTree = "<group>"; };
 		65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanModalHostingController.swift; sourceTree = "<group>"; };
 		65D78B2A2CCA55990096ADCC /* CustomToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToast.swift; sourceTree = "<group>"; };
 		65D78B2B2CCA55990096ADCC /* CustomToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToastView.swift; sourceTree = "<group>"; };
@@ -92,6 +100,9 @@
 		65D78B382CCA5D230096ADCC /* CustomToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomToastView.xib; sourceTree = "<group>"; };
 		65E209522C89C38400E899BD /* CardViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewerViewController.swift; sourceTree = "<group>"; };
 		65E209542C89C9BA00E899BD /* Rotate3DImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rotate3DImageView.swift; sourceTree = "<group>"; };
+		65E7AAFB2D000EAA00363CBB /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		65E7AAFE2D0010D800363CBB /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		65E7AB012D0160A900363CBB /* SkeletonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +111,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D78B262CCA39E90096ADCC /* SwiftMessages-Dynamic in Frameworks */,
+				65E7AB0B2D01611F00363CBB /* SkeletonView in Frameworks */,
 				651B57EA2CF09F1800C28D93 /* Then in Frameworks */,
 				655936812C5249010096F710 /* SnapKit in Frameworks */,
 				653ADD982C919CFB002C75A3 /* CryptoSwift in Frameworks */,
@@ -246,6 +258,9 @@
 		6576D3E32C4F5A2B00761785 /* Prototyping */ = {
 			isa = PBXGroup;
 			children = (
+				65E7AB002D01609900363CBB /* SkeletonTableView */,
+				65E7AAFA2D000E8700363CBB /* PhotoViewer */,
+				658F8E822CF5EA33005183F2 /*  SwiftUI+UIKit */,
 				6505A6002CE4A4AD00B95B40 /* Decimal */,
 				656247252CDA3F8D00C2F7AC /* NavigationController */,
 				65D78B282CCA55600096ADCC /* CustomToast */,
@@ -276,6 +291,15 @@
 				6576D3EC2C4F5A2C00761785 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		658F8E822CF5EA33005183F2 /*  SwiftUI+UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				658F8E832CF5EA4B005183F2 /* SwiftUIViewContainer.swift */,
+				658F8E852CF5EBF2005183F2 /* AnyUIView.swift */,
+			);
+			path = " SwiftUI+UIKit";
 			sourceTree = "<group>";
 		};
 		65A010272CA2D86D006DE40F /* PanModal */ = {
@@ -317,6 +341,31 @@
 			path = CardViewer;
 			sourceTree = "<group>";
 		};
+		65E7AAFA2D000E8700363CBB /* PhotoViewer */ = {
+			isa = PBXGroup;
+			children = (
+				65E7AAFD2D0010CF00363CBB /* Cells */,
+				65E7AAFB2D000EAA00363CBB /* PhotoViewerViewController.swift */,
+			);
+			path = PhotoViewer;
+			sourceTree = "<group>";
+		};
+		65E7AAFD2D0010CF00363CBB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				65E7AAFE2D0010D800363CBB /* PhotoCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		65E7AB002D01609900363CBB /* SkeletonTableView */ = {
+			isa = PBXGroup;
+			children = (
+				65E7AB012D0160A900363CBB /* SkeletonTableViewController.swift */,
+			);
+			path = SkeletonTableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -340,6 +389,7 @@
 				65D78B232CCA39E90096ADCC /* SwiftMessages */,
 				65D78B252CCA39E90096ADCC /* SwiftMessages-Dynamic */,
 				651B57E92CF09F1800C28D93 /* Then */,
+				65E7AB0A2D01611F00363CBB /* SkeletonView */,
 			);
 			productName = Prototyping;
 			productReference = 6576D3E12C4F5A2B00761785 /* Prototyping.app */;
@@ -375,6 +425,7 @@
 				65A010282CA2D8A4006DE40F /* XCRemoteSwiftPackageReference "PanModal" */,
 				65D78B222CCA39E90096ADCC /* XCRemoteSwiftPackageReference "SwiftMessages" */,
 				651B57E82CF09F1800C28D93 /* XCRemoteSwiftPackageReference "Then" */,
+				65E7AB092D01611F00363CBB /* XCRemoteSwiftPackageReference "SkeletonView" */,
 			);
 			productRefGroup = 6576D3E22C4F5A2B00761785 /* Products */;
 			projectDirPath = "";
@@ -421,19 +472,24 @@
 				65D78B322CCA55990096ADCC /* ToastData.swift in Sources */,
 				651E8FE52C6B122200F3A98D /* ChartData.swift in Sources */,
 				651555992C9C3D8D0026C589 /* MyCustomView.swift in Sources */,
+				65E7AAFC2D000EAA00363CBB /* PhotoViewerViewController.swift in Sources */,
 				651B57E72CF09C1F00C28D93 /* CustomInteractivePopTransition.swift in Sources */,
 				65A0102C2CA2DF95006DE40F /* PanModalHostingController.swift in Sources */,
 				6576D3F42C4F5A6800761785 /* MyViewController.swift in Sources */,
 				65E209552C89C9BA00E899BD /* Rotate3DImageView.swift in Sources */,
 				656E2F942CC66D2C00462888 /* NSObject+Extension.swift in Sources */,
+				65E7AB022D0160A900363CBB /* SkeletonTableViewController.swift in Sources */,
 				652D324D2CD0F4B900DC54C6 /* AtmCellContentView.swift in Sources */,
 				65D78B352CCA55A30096ADCC /* CustomToastViewTestController.swift in Sources */,
 				652D32512CD0FD2E00DC54C6 /* BranchCellContentView.swift in Sources */,
 				656E2F9C2CC7B72800462888 /* CustomViewController.swift in Sources */,
 				652D324F2CD0FB4300DC54C6 /* UIView+Extension.swift in Sources */,
+				65E7AAFF2D0010D800363CBB /* PhotoCell.swift in Sources */,
 				6576D3F62C50D28B00761785 /* StackButtonsViewController.swift in Sources */,
+				658F8E842CF5EA4B005183F2 /* SwiftUIViewContainer.swift in Sources */,
 				658CCFEB2C5B7FF400ABE656 /* Snapkit2ViewController.swift in Sources */,
 				6576D3E52C4F5A2B00761785 /* PrototypingApp.swift in Sources */,
+				658F8E862CF5EBF2005183F2 /* AnyUIView.swift in Sources */,
 				651E8FE72C6B134600F3A98D /* ChartViewController.swift in Sources */,
 				656E2F9A2CC7AE9700462888 /* ABSwitchButton.swift in Sources */,
 			);
@@ -567,6 +623,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Prototyping/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App would like to access photos to view";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -603,6 +660,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Prototyping/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "App would like to access photos to view";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -692,6 +750,14 @@
 				minimumVersion = 10.0.1;
 			};
 		};
+		65E7AB092D01611F00363CBB /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.31.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -724,6 +790,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 65D78B222CCA39E90096ADCC /* XCRemoteSwiftPackageReference "SwiftMessages" */;
 			productName = "SwiftMessages-Dynamic";
+		};
+		65E7AB0A2D01611F00363CBB /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65E7AB092D01611F00363CBB /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

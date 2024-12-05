@@ -7,6 +7,7 @@
 
 import SwiftUI
 import UIKit
+import Then
 
 @main
 struct PrototypingApp: App {
@@ -20,19 +21,16 @@ struct PrototypingApp: App {
 }
 
 struct MyViewControllerRepresentable: UIViewControllerRepresentable {
-    typealias UIViewControllerType = UINavigationController
-//    typealias UIViewControllerType = ChartViewController
+    typealias UIViewControllerType = PhotoViewerViewController
 
     func makeUIViewController(context: Context) -> UIViewControllerType {
 //        return UIStoryboard(name: "StackButtonsViewController", bundle: nil).instantiateInitialViewController()!
-//        return .init() // default VC
-
-        let root = UIViewController()
-        root.title = "root"
-        let nav = UINavigationController(rootViewController: root)
-        nav.pushViewController(CustomNavigationBackViewController(), animated: false)
-//        nav.isNavigationBarHidden = true
-        return nav
+        return .init() // default VC
+//
+//        let root = CustomNavigationBackViewController().then { $0.loadViewIfNeeded() }
+//        let nav = UINavigationController(rootViewController: root)
+//        nav.pushViewController(CustomNavigationBackViewController(), animated: false)
+//        return nav
 
     }
 
