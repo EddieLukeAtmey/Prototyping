@@ -12,26 +12,60 @@ import Then
 
 final class SkeletonTableViewController: UITableViewController {
 
+    lazy var datasource = UITableViewDiffableDataSource<Int, Int>(tableView: tableView) { tableView, indexPath, item in
+        tableView.dequeueReusableCell(withIdentifier: SkeletonTableViewCell.className, for: indexPath)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(SkeletonTableViewCell.self, forCellReuseIdentifier: SkeletonTableViewCell.className)
         tableView.separatorStyle = .none
         tableView.sectionHeaderTopPadding = 0
-    }
+        reloadData()
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 15
-    }
+        tableView.tableFooterView = UIView().then { [weak self] in
+            $0.backgroundColor = .black
+            UIButton().then {
+                $0.setTitle("loadMore", for: .normal)
+                $0.addTarget(self, action: #selector(self?.showLoadMore), for: .touchUpInside)
+                $0.backgroundColor = .cyan
+            }.then($0.addSubview(_:)).snp.makeConstraints { $0.center.equalToSuperview() }
+        }
 
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeueReusableCell(withIdentifier: SkeletonTableViewCell.className, for: indexPath)
+
     }
 
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         let isLast = indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1
         (cell as? SkeletonTableViewCell)?.separator.isHidden = isLast
-        cell.contentView.showAnimatedGradientSkeleton()
+        //        cell.contentView.showAnimatedGradientSkeleton()
     }
+
+    private func reloadData() {
+        var snapshot = NSDiffableDataSourceSnapshot<Int, Int>()
+        snapshot.appendSections([0])
+        snapshot.appendItems((0..<10).compactMap(Int.init), toSection: 0)
+
+        datasource.applySnapshotUsingReloadData(snapshot) {
+//            self.showLoadMore()
+        }
+    }
+
+    @objc private func showLoadMore() {
+
+        tableView.tableFooterView = nil
+
+//        let loadMoreView = SkeletonTableViewCell()
+//        tableView.addSubview(loadMoreView)
+//        let size = loadMoreView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
+//        loadMoreView.frame.origin.y = tableView.contentOffset.y
+//        tableView.contentOffset.y += size.height
+//        loadMoreView.contentView.showAnimatedGradientSkeleton()
+    }
+
+//    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+//        UIView().then { $0.backgroundColor = .purple.withAlphaComponent(0.2) }
+//    }
 }
 
 final class SkeletonTableViewCell: UITableViewCell {
@@ -50,7 +84,7 @@ final class SkeletonTableViewCell: UITableViewCell {
     }
 
     private func setup() {
-
+        selectionStyle = .none
         let imgView = UIImageView()
         let titleLabel = UILabel()
         let description1Label = UILabel()
@@ -139,8 +173,11 @@ final class SkeletonTableViewCell: UITableViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        contentView.hideSkeleton()
-        contentView.showAnimatedGradientSkeleton()
+
+        if contentView.sk.isSkeletonActive {
+            contentView.hideSkeleton()
+            contentView.showAnimatedGradientSkeleton()
+        }
     }
 }
 

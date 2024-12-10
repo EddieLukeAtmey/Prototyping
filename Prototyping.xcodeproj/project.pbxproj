@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6505A6022CE4A4C100B95B40 /* DecimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505A6012CE4A4C100B95B40 /* DecimalViewController.swift */; };
+		6505CD702D06F8560066470E /* CubePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6505CD6F2D06F8560066470E /* CubePageViewController.swift */; };
 		651555992C9C3D8D0026C589 /* MyCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651555982C9C3D8D0026C589 /* MyCustomView.swift */; };
 		651B57E52CF0960D00C28D93 /* CustomNavigationBackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B57E42CF0960D00C28D93 /* CustomNavigationBackViewController.swift */; };
 		651B57E72CF09C1F00C28D93 /* CustomInteractivePopTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651B57E62CF09C1F00C28D93 /* CustomInteractivePopTransition.swift */; };
@@ -59,6 +60,7 @@
 
 /* Begin PBXFileReference section */
 		6505A6012CE4A4C100B95B40 /* DecimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalViewController.swift; sourceTree = "<group>"; };
+		6505CD6F2D06F8560066470E /* CubePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubePageViewController.swift; sourceTree = "<group>"; };
 		651555982C9C3D8D0026C589 /* MyCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomView.swift; sourceTree = "<group>"; };
 		651B57E42CF0960D00C28D93 /* CustomNavigationBackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBackViewController.swift; sourceTree = "<group>"; };
 		651B57E62CF09C1F00C28D93 /* CustomInteractivePopTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInteractivePopTransition.swift; sourceTree = "<group>"; };
@@ -346,6 +348,7 @@
 			children = (
 				65E7AAFD2D0010CF00363CBB /* Cells */,
 				65E7AAFB2D000EAA00363CBB /* PhotoViewerViewController.swift */,
+				6505CD6F2D06F8560066470E /* CubePageViewController.swift */,
 			);
 			path = PhotoViewer;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 				655D71B42C64E92100C23B6E /* SwiftCombineViewController.swift in Sources */,
 				65D78B322CCA55990096ADCC /* ToastData.swift in Sources */,
 				651E8FE52C6B122200F3A98D /* ChartData.swift in Sources */,
+				6505CD702D06F8560066470E /* CubePageViewController.swift in Sources */,
 				651555992C9C3D8D0026C589 /* MyCustomView.swift in Sources */,
 				65E7AAFC2D000EAA00363CBB /* PhotoViewerViewController.swift in Sources */,
 				651B57E72CF09C1F00C28D93 /* CustomInteractivePopTransition.swift in Sources */,
