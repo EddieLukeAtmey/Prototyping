@@ -17,10 +17,12 @@ final class ChartViewController: UIViewController {
         let chartView = MyChartView(happyData: happyValues, normalData: normalValues)
         chartView.backgroundColor = .white
         view.addSubview(chartView)
+        view.backgroundColor = .lightGray
         chartView.makeSubviews()
         chartView.snp.makeConstraints {
             $0.width.equalTo(view.frame.width)
             $0.height.equalTo(view.snp.width).multipliedBy(0.5)
+            $0.center.equalToSuperview()
         }
     }
 }

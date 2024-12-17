@@ -14,16 +14,26 @@ struct PrototypingApp: App {
         WindowGroup {
 //            ContentView()
             MyViewControllerRepresentable()
+                .edgesIgnoringSafeArea(.all)
         }
     }
 }
 
 struct MyViewControllerRepresentable: UIViewControllerRepresentable {
-    typealias UIViewControllerType = CustomToastViewTestController
+    typealias UIViewControllerType = UINavigationController
+//    typealias UIViewControllerType = ChartViewController
 
     func makeUIViewController(context: Context) -> UIViewControllerType {
 //        return UIStoryboard(name: "StackButtonsViewController", bundle: nil).instantiateInitialViewController()!
-        .init()
+//        return .init() // default VC
+
+        let root = UIViewController()
+        root.title = "root"
+        let nav = UINavigationController(rootViewController: root)
+        nav.pushViewController(CustomNavigationBackViewController(), animated: false)
+//        nav.isNavigationBarHidden = true
+        return nav
+
     }
 
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
@@ -34,4 +44,5 @@ struct MyViewControllerRepresentable: UIViewControllerRepresentable {
 @available(iOS 17, *)
 #Preview {
     MyViewControllerRepresentable()
+        .edgesIgnoringSafeArea(.all)
 }
