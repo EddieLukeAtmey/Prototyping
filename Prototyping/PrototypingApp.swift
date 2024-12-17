@@ -21,7 +21,7 @@ struct PrototypingApp: App {
 }
 
 struct MyViewControllerRepresentable: UIViewControllerRepresentable {
-    typealias UIViewControllerType = PhotoViewerViewController
+    typealias UIViewControllerType = SkeletonTableViewController
 
     func makeUIViewController(context: Context) -> UIViewControllerType {
 //        return UIStoryboard(name: "StackButtonsViewController", bundle: nil).instantiateInitialViewController()!
