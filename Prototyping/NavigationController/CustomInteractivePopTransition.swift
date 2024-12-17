@@ -9,6 +9,8 @@ import Then
 
 /// The controller: control custom interaction along with the pan gesture (should be able to pan from anywhere in the view)
 final class CustomInteractivePopTransition: UIPercentDrivenInteractiveTransition {
+    typealias PopAction = ()->[UIViewController]?
+
     private var isInteractive = false
     private var transitionContext: UIViewControllerContextTransitioning?
     private let animator = CustomPopAnimator()
@@ -16,25 +18,41 @@ final class CustomInteractivePopTransition: UIPercentDrivenInteractiveTransition
     private weak var navigationController: UINavigationController?
     private weak var originalNavigationDelegate: UINavigationControllerDelegate?
 
-    func setup(viewController: UIViewController) {
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
-        viewController.view.addGestureRecognizer(panGesture)
+    private var customPopAction: PopAction?
+    private var tempPopViewControllers: [UIViewController]?
+
+    func setup(viewController: UIViewController, useEdgeGesture: Bool = false, customPopAction: PopAction? = nil) {
+        let backGesture: UIGestureRecognizer
+        if useEdgeGesture {
+            let edgeGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+            edgeGesture.edges = .left
+            backGesture = edgeGesture
+        } else {
+            backGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+        }
+        viewController.view.addGestureRecognizer(backGesture)
 
         navigationController = viewController.navigationController
         originalNavigationDelegate = navigationController?.delegate
-        print(#function, viewController)
         self.viewController = viewController
+
+        self.customPopAction = customPopAction
     }
 
     @objc private func handlePanGesture(_ gesture: UIPanGestureRecognizer) {
 
         let percent = gesture.translation(in: gesture.view!).x / gesture.view!.bounds.width
-
         switch gesture.state {
         case .began:
+
             isInteractive = true
             navigationController?.delegate = self
-            navigationController?.popViewController(animated: true)
+
+            if let customPopAction {
+                tempPopViewControllers = customPopAction()
+            } else {
+                navigationController?.popViewController(animated: true)
+            }
 
         case .changed:
             update(percent)
@@ -43,6 +61,7 @@ final class CustomInteractivePopTransition: UIPercentDrivenInteractiveTransition
 
             isInteractive = false
             navigationController?.delegate = originalNavigationDelegate
+            defer { tempPopViewControllers = nil }
 
             // Thresholds
             let progressThreshold: CGFloat = 0.5
@@ -52,8 +71,14 @@ final class CustomInteractivePopTransition: UIPercentDrivenInteractiveTransition
                 finish()
             } else {
                 cancel()
-                
-                print(navigationController?.visibleViewController)
+
+                if let viewController, let navigationController  {
+                    if let tempPopViewControllers {
+                        navigationController.viewControllers.append(contentsOf: tempPopViewControllers)
+                    }
+
+                    originalNavigationDelegate?.navigationController?(navigationController, didShow: viewController, animated: true)
+                }
             }
 
         default:
@@ -68,7 +93,6 @@ extension CustomInteractivePopTransition: UINavigationControllerDelegate {
                               from fromVC: UIViewController,
                               to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning?
     {
-        print(#function, isInteractive)
         return isInteractive ? animator :
         originalNavigationDelegate?.navigationController?(navigationController, animationControllerFor: operation, from: fromVC, to: toVC)
     }
@@ -82,13 +106,11 @@ extension CustomInteractivePopTransition: UINavigationControllerDelegate {
     }
 
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
-        print(#function, originalNavigationDelegate)
         guard originalNavigationDelegate !== navigationController.delegate else { return }
         originalNavigationDelegate?.navigationController?(navigationController, willShow: viewController, animated: animated)
     }
 
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        print(#function, originalNavigationDelegate)
         guard originalNavigationDelegate !== navigationController.delegate else { return }
         originalNavigationDelegate?.navigationController?(navigationController, didShow: viewController, animated: animated)
     }
@@ -130,12 +152,16 @@ final class CustomPopAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 }
 
 #Preview {
-//    let root = UIViewController()
-//    root.title = "root"
 
-    let root = CustomNavigationBackViewController().then { $0.view.backgroundColor = .blue.withAlphaComponent(0.3) }
+    let root = UIViewController().then { $0.view.backgroundColor = .blue.withAlphaComponent(0.3) }
     let nav = UINavigationController(rootViewController: root)
+
+    nav.pushViewController(UIViewController().then { $0.view.backgroundColor = .red },
+                           animated: false)
+    nav.pushViewController(UIViewController().then { $0.view.backgroundColor = .blue },
+                           animated: false)
     nav.pushViewController(CustomNavigationBackViewController(), animated: false)
+
 
     return nav
 }

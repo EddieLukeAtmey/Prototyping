@@ -36,7 +36,18 @@ final class CustomViewController: UIViewController {
 
         v.bindEntity(entity)
 
-        let btn = UIButton(type: .close)
+        var config = UIButton.Configuration.plain()
+        config.contentInsets = .init(top: 0, leading: 8,
+                                     bottom: 0, trailing: 8)
+        config.titleTextAttributesTransformer = .init { incoming in
+            var outcoming = incoming
+            outcoming.font = .boldSystemFont(ofSize: 24)
+            return outcoming
+        }
+
+        let btn = UIButton(configuration: config)// UIButton(type: .close)
+        btn.setTitle("ablablablab", for: .normal)
+
         view.addSubview(btn)
         btn.snp.makeConstraints {
             $0.centerX.equalToSuperview()

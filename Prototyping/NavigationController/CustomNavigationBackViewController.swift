@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Then
 
 final class CustomNavigationBackViewController: UIViewController {
     let customBack = CustomInteractivePopTransition()
@@ -25,7 +26,9 @@ final class CustomNavigationBackViewController: UIViewController {
     private func customizedNavBack() {
         navigationController?.isNavigationBarHidden = true
         makeCustomNav()
-        customBack.setup(viewController: self)
+        customBack.setup(viewController: self, useEdgeGesture: true) { [weak self] in
+            self?.customPopViewController()
+        }
     }
 
     private func makeCustomNav() {
@@ -52,15 +55,34 @@ final class CustomNavigationBackViewController: UIViewController {
     }
 
     @objc private func popViewController() {
-        navigationController?.popViewController(animated: true)
+//        navigationController?.popViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
+    }
+
+    private func customPopViewController() -> [UIViewController]? {
+
+        if let viewControllers = navigationController?.viewControllers, viewControllers.count > 2 {
+            let previousVC = viewControllers[viewControllers.count - 3]
+            return navigationController?.popToViewController(previousVC, animated: true)
+        }
+
+        return nil
     }
 }
 
 #Preview {
-    let root = UIViewController()
-    root.title = "root"
+    let root = UIViewController().then {
+        $0.view.backgroundColor = .lightGray
+        $0.title = "root"
+    }
+
     let nav = UINavigationController(rootViewController: root)
-    nav.pushViewController(CustomNavigationBackViewController(), animated: false)
+    nav.pushViewController(UIViewController().then { $0.view.backgroundColor = .red },
+                           animated: false)
+    nav.pushViewController(UIViewController().then { $0.view.backgroundColor = .blue },
+                           animated: false)
+    nav.pushViewController(CustomNavigationBackViewController(),
+                           animated: false)
 
     return nav
 }
