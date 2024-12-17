@@ -2,7 +2,7 @@
 //  DecimalViewController.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 13/11/24.
+//  Created by Eddie on 13/11/24.
 //
 
 import UIKit

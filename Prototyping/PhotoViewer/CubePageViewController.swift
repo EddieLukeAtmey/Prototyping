@@ -2,7 +2,7 @@
 //  CubePageViewController.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 9/12/24.
+//  Created by Eddie on 9/12/24.
 //
 //  Refer: https://github.com/oyvinddd/ohcubeview/blob/master/OHCubeView/OHCubeView.swift
 

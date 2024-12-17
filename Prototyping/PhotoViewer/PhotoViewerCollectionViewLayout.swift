@@ -2,7 +2,7 @@
 //  PhotoViewerCollectionViewLayout.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 16/12/24.
+//  Created by Eddie on 16/12/24.
 //
 
 import UIKit

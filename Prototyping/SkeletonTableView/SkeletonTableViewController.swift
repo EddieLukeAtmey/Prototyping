@@ -2,7 +2,7 @@
 //  SkeletonTableViewController.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 5/12/24.
+//  Created by Eddie on 5/12/24.
 //
 
 import UIKit

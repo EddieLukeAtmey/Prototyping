@@ -2,7 +2,7 @@
 //  MyCustomView.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 19/9/24.
+//  Created by Eddie on 19/9/24.
 //
 
 import UIKit

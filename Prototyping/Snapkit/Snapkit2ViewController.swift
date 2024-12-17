@@ -2,7 +2,7 @@
 //  Snapkit2ViewController.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 1/8/24.
+//  Created by Eddie on 1/8/24.
 //
 
 import UIKit

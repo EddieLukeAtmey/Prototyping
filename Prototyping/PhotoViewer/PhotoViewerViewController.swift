@@ -2,7 +2,7 @@
 //  PhotoViewerViewController.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 4/12/24.
+//  Created by Eddie on 4/12/24.
 //
 
 import UIKit

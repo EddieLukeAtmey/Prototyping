@@ -2,7 +2,7 @@
 //  LottieViewController.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 17/12/24.
+//  Created by Eddie on 17/12/24.
 //
 
 import UIKit

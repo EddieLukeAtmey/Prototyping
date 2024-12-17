@@ -2,7 +2,7 @@
 //  AtmCellContentView.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 29/10/24.
+//  Created by Eddie on 29/10/24.
 //
 
 import UIKit

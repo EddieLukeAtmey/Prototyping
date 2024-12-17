@@ -2,7 +2,7 @@
 //  PanModalHostingController.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 24/9/24.
+//  Created by Eddie on 24/9/24.
 //
 
 import UIKit

@@ -2,7 +2,7 @@
 //  NSObject+Extension.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 21/10/24.
+//  Created by Eddie on 21/10/24.
 //
 
 import Foundation

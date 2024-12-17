@@ -2,7 +2,7 @@
 //  StackButtonsViewController.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 24/7/24.
+//  Created by Eddie on 24/7/24.
 //
 
 import UIKit

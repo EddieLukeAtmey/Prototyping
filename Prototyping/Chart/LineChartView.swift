@@ -2,7 +2,7 @@
 //  LineChartView.swift
 //  Prototyping
 //
-//  Created by Ngoc Dang on 13/8/24.
+//  Created by Eddie on 13/8/24.
 //
 
 import UIKit
