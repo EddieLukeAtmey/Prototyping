@@ -160,6 +160,7 @@ final class PhotoViewerViewController: UIViewController {
             }
 
             self.isScrollingInMotion = false
+        } completion: { _ in
             self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
         }
     }
