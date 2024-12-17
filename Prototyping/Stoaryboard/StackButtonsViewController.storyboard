@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0jv-AU-2tE">
+                                <rect key="frame" x="59" y="0.0" width="734" height="860"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Inl-FF-4TS"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="j3l-en-mPw"/>
+                            </scrollView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="FBC-WY-W5C">
+                                <rect key="frame" x="75" y="178.66666666666666" width="488" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPk-uS-dPk">
+                                        <rect key="frame" x="0.0" y="0.0" width="104.33333333333333" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Lãi cuối kỳ"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWX-Iz-xYl">
+                                        <rect key="frame" x="116.33333333333334" y="0.0" width="121" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Lãi hàng quý"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKq-Q0-hwx">
+                                        <rect key="frame" x="249.33333333333331" y="0.0" width="136.33333333333331" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Lãi hàng tháng"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="500" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVW-EE-cxE">
+                                        <rect key="frame" x="397.66666666666669" y="0.0" width="90.333333333333314" height="36"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <color key="tintColor" systemColor="systemPinkColor"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Lãi trước"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="IUj-mu-YoK"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g36-Ah-ddq">
+                                <rect key="frame" x="75" y="222" width="104.33333333333331" height="38.333333333333343"/>
+                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Lãi cuối kỳ"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0jv-AU-2tE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7km-RP-dRT"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0jv-AU-2tE" secondAttribute="trailing" id="Cf1-aB-bQB"/>
+                            <constraint firstItem="g36-Ah-ddq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="FfB-Gb-GdM"/>
+                            <constraint firstItem="0jv-AU-2tE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="FkL-M1-plE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="0jv-AU-2tE" secondAttribute="bottom" id="aVc-z3-fE4"/>
+                            <constraint firstItem="FBC-WY-W5C" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="cp8-bc-C4B"/>
+                            <constraint firstItem="FBC-WY-W5C" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="n9V-V4-qRW"/>
+                            <constraint firstItem="g36-Ah-ddq" firstAttribute="top" secondItem="FBC-WY-W5C" secondAttribute="bottom" id="rXi-h3-HAj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0jv-AU-2tE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652565062C50D5AD000BA24C /* StackButtonsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 652565052C50D5AD000BA24C /* StackButtonsViewController.storyboard */; };
+		655936812C5249010096F710 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 655936802C5249010096F710 /* SnapKit */; };
+		655936842C52491B0096F710 /* SnapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655936832C52491B0096F710 /* SnapkitViewController.swift */; };
+		655D71B42C64E92100C23B6E /* SwiftCombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655D71B32C64E92100C23B6E /* SwiftCombineViewController.swift */; };
 		6576D3E52C4F5A2B00761785 /* PrototypingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3E42C4F5A2B00761785 /* PrototypingApp.swift */; };
 		6576D3E72C4F5A2B00761785 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3E62C4F5A2B00761785 /* ContentView.swift */; };
 		6576D3E92C4F5A2C00761785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6576D3E82C4F5A2C00761785 /* Assets.xcassets */; };
 		6576D3ED2C4F5A2C00761785 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6576D3EC2C4F5A2C00761785 /* Preview Assets.xcassets */; };
 		6576D3F42C4F5A6800761785 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3F32C4F5A6800761785 /* MyViewController.swift */; };
+		6576D3F62C50D28B00761785 /* StackButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6576D3F52C50D28B00761785 /* StackButtonsViewController.swift */; };
+		658CCFEB2C5B7FF400ABE656 /* Snapkit2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		652565052C50D5AD000BA24C /* StackButtonsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackButtonsViewController.storyboard; sourceTree = "<group>"; };
+		655936832C52491B0096F710 /* SnapkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapkitViewController.swift; sourceTree = "<group>"; };
+		655D71B32C64E92100C23B6E /* SwiftCombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCombineViewController.swift; sourceTree = "<group>"; };
 		6576D3E12C4F5A2B00761785 /* Prototyping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototyping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6576D3E42C4F5A2B00761785 /* PrototypingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypingApp.swift; sourceTree = "<group>"; };
 		6576D3E62C4F5A2B00761785 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -22,6 +31,8 @@
 		6576D3EA2C4F5A2C00761785 /* Prototyping.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Prototyping.entitlements; sourceTree = "<group>"; };
 		6576D3EC2C4F5A2C00761785 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6576D3F32C4F5A6800761785 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		6576D3F52C50D28B00761785 /* StackButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackButtonsViewController.swift; sourceTree = "<group>"; };
+		658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapkit2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,12 +40,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655936812C5249010096F710 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		652565042C50D59F000BA24C /* Stoaryboard */ = {
+			isa = PBXGroup;
+			children = (
+				652565052C50D5AD000BA24C /* StackButtonsViewController.storyboard */,
+			);
+			path = Stoaryboard;
+			sourceTree = "<group>";
+		};
+		655936822C5249110096F710 /* Snapkit */ = {
+			isa = PBXGroup;
+			children = (
+				655936832C52491B0096F710 /* SnapkitViewController.swift */,
+				658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */,
+			);
+			path = Snapkit;
+			sourceTree = "<group>";
+		};
+		655D71B22C64E91300C23B6E /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				655D71B32C64E92100C23B6E /* SwiftCombineViewController.swift */,
+			);
+			path = Combine;
+			sourceTree = "<group>";
+		};
 		6576D3D82C4F5A2B00761785 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +91,16 @@
 		6576D3E32C4F5A2B00761785 /* Prototyping */ = {
 			isa = PBXGroup;
 			children = (
+				655D71B22C64E91300C23B6E /* Combine */,
+				655936822C5249110096F710 /* Snapkit */,
+				652565042C50D59F000BA24C /* Stoaryboard */,
 				6576D3E42C4F5A2B00761785 /* PrototypingApp.swift */,
 				6576D3E62C4F5A2B00761785 /* ContentView.swift */,
 				6576D3E82C4F5A2C00761785 /* Assets.xcassets */,
 				6576D3EA2C4F5A2C00761785 /* Prototyping.entitlements */,
 				6576D3EB2C4F5A2C00761785 /* Preview Content */,
 				6576D3F32C4F5A6800761785 /* MyViewController.swift */,
+				6576D3F52C50D28B00761785 /* StackButtonsViewController.swift */,
 			);
 			path = Prototyping;
 			sourceTree = "<group>";
@@ -88,6 +129,9 @@
 			dependencies = (
 			);
 			name = Prototyping;
+			packageProductDependencies = (
+				655936802C5249010096F710 /* SnapKit */,
+			);
 			productName = Prototyping;
 			productReference = 6576D3E12C4F5A2B00761785 /* Prototyping.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 6576D3D82C4F5A2B00761785;
+			packageReferences = (
+				6559367F2C5249010096F710 /* XCRemoteSwiftPackageReference "snapkit" */,
+			);
 			productRefGroup = 6576D3E22C4F5A2B00761785 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,6 +177,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652565062C50D5AD000BA24C /* StackButtonsViewController.storyboard in Resources */,
 				6576D3ED2C4F5A2C00761785 /* Preview Assets.xcassets in Resources */,
 				6576D3E92C4F5A2C00761785 /* Assets.xcassets in Resources */,
 			);
@@ -142,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655936842C52491B0096F710 /* SnapkitViewController.swift in Sources */,
 				6576D3E72C4F5A2B00761785 /* ContentView.swift in Sources */,
+				655D71B42C64E92100C23B6E /* SwiftCombineViewController.swift in Sources */,
 				6576D3F42C4F5A6800761785 /* MyViewController.swift in Sources */,
+				6576D3F62C50D28B00761785 /* StackButtonsViewController.swift in Sources */,
+				658CCFEB2C5B7FF400ABE656 /* Snapkit2ViewController.swift in Sources */,
 				6576D3E52C4F5A2B00761785 /* PrototypingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +411,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6559367F2C5249010096F710 /* XCRemoteSwiftPackageReference "snapkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/snapkit/snapkit/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		655936802C5249010096F710 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6559367F2C5249010096F710 /* XCRemoteSwiftPackageReference "snapkit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6576D3D92C4F5A2B00761785 /* Project object */;
 }
