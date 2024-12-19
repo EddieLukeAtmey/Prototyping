@@ -46,7 +46,7 @@
 		65A0102C2CA2DF95006DE40F /* PanModalHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */; };
 		65BD595F2D11656600FC82AF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 65BD595E2D11656600FC82AF /* Lottie */; };
 		65BD59622D11657700FC82AF /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BD59612D11657700FC82AF /* LottieViewController.swift */; };
-		65BD59642D1165D500FC82AF /* Animation-lookback.json in Resources */ = {isa = PBXBuildFile; fileRef = 65BD59632D1165D500FC82AF /* Animation-lookback.json */; };
+		65BD59722D12B70700FC82AF /* Animation_Lookback.json in Resources */ = {isa = PBXBuildFile; fileRef = 65BD59712D12B70700FC82AF /* Animation_Lookback.json */; };
 		65D78B242CCA39E90096ADCC /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 65D78B232CCA39E90096ADCC /* SwiftMessages */; };
 		65D78B262CCA39E90096ADCC /* SwiftMessages-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 65D78B252CCA39E90096ADCC /* SwiftMessages-Dynamic */; };
 		65D78B2F2CCA55990096ADCC /* CustomToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D78B2A2CCA55990096ADCC /* CustomToast.swift */; };
@@ -101,7 +101,7 @@
 		658F8E852CF5EBF2005183F2 /* AnyUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUIView.swift; sourceTree = "<group>"; };
 		65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanModalHostingController.swift; sourceTree = "<group>"; };
 		65BD59612D11657700FC82AF /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
-		65BD59632D1165D500FC82AF /* Animation-lookback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "Animation-lookback.json"; sourceTree = "<group>"; };
+		65BD59712D12B70700FC82AF /* Animation_Lookback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Animation_Lookback.json; sourceTree = "<group>"; };
 		65D78B2A2CCA55990096ADCC /* CustomToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToast.swift; sourceTree = "<group>"; };
 		65D78B2B2CCA55990096ADCC /* CustomToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomToastView.swift; sourceTree = "<group>"; };
 		65D78B2D2CCA55990096ADCC /* ToastData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastData.swift; sourceTree = "<group>"; };
@@ -326,7 +326,7 @@
 		65BD59602D11656E00FC82AF /* LottieViewer */ = {
 			isa = PBXGroup;
 			children = (
-				65BD59632D1165D500FC82AF /* Animation-lookback.json */,
+				65BD59712D12B70700FC82AF /* Animation_Lookback.json */,
 				65BD59612D11657700FC82AF /* LottieViewController.swift */,
 			);
 			path = LottieViewer;
@@ -468,8 +468,8 @@
 				652565062C50D5AD000BA24C /* StackButtonsViewController.storyboard in Resources */,
 				65D78B392CCA5D230096ADCC /* CustomToastView.xib in Resources */,
 				6576D3ED2C4F5A2C00761785 /* Preview Assets.xcassets in Resources */,
+				65BD59722D12B70700FC82AF /* Animation_Lookback.json in Resources */,
 				6576D3E92C4F5A2C00761785 /* Assets.xcassets in Resources */,
-				65BD59642D1165D500FC82AF /* Animation-lookback.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,8 +660,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -697,8 +697,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

@@ -11,7 +11,9 @@ import Then
 
 final class PhotoViewerViewController: UIViewController {
     private var collectionView: UICollectionView!
-    private let itemSpacing: CGFloat = 8
+    private let itemSpacing: CGFloat = 5
+    private let selectionAdditionSpacing: CGFloat = 10
+    private let itemSize: CGSize = .init(width: 32, height: 44)
 
     private let dummyData: [UIColor] = [
         .carrot.withAlphaComponent(0.3),
@@ -32,23 +34,15 @@ final class PhotoViewerViewController: UIViewController {
 
     lazy var dataSource = UICollectionViewDiffableDataSource<Int, UIColor>(collectionView: collectionView) { collectionView, indexPath, itemIdentifier in
         (collectionView.dequeueReusableCell(withReuseIdentifier: PhotoCell.className, for: indexPath) as? PhotoCell)?
-            .then { $0.configure(with: itemIdentifier) }
+            .then { $0.configure(with: itemIdentifier, index: indexPath.item) }
     }
 
     private var isScrollingInMotion = false { didSet {
-        guard isScrollingInMotion != oldValue else { return }
-
-        if isScrollingInMotion {
-            collectionView.collectionViewLayout = photoViewerScrollingLayout
-        } else {
-            collectionView.collectionViewLayout = photoViewerStaticLayout
-        }
+        photoViewerLayout.isScrollingInMotion = isScrollingInMotion
     }}
 
     private var isUserScrolling = false
-
-    private let photoViewerScrollingLayout = UICollectionViewFlowLayout()
-    private lazy var photoViewerStaticLayout = PhotoViewerCollectionViewLayout(scrollingLayout: photoViewerScrollingLayout)
+    private let photoViewerLayout = PhotoViewerCollectionViewLayout()
 
     // PageVC
     private var pageViewController: UIPageViewController!
@@ -63,14 +57,17 @@ final class PhotoViewerViewController: UIViewController {
     }
 
     private func setupCollectionView() {
-        photoViewerScrollingLayout.scrollDirection = .horizontal
-        photoViewerScrollingLayout.minimumInteritemSpacing = itemSpacing
 
-        let sideInset = (view.bounds.width - 44) / 2 // Ensure first and last items center-align
-        photoViewerScrollingLayout.sectionInset = UIEdgeInsets(top: 0, left: sideInset, bottom: 0, right: sideInset)
+        photoViewerLayout.scrollDirection = .horizontal
+        photoViewerLayout.minimumInteritemSpacing = selectionAdditionSpacing
+        photoViewerLayout.minimumLineSpacing = itemSpacing
+        photoViewerLayout.itemSize = itemSize
 
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: photoViewerStaticLayout)
-//        collectionView = UICollectionView(frame: .zero, collectionViewLayout: photoViewerScrollingLayout)
+        // Ensure first and last items center-align
+        let sideInset = (view.bounds.width - itemSize.width) / 2
+        photoViewerLayout.sectionInset = UIEdgeInsets(top: 0, left: sideInset, bottom: 0, right: sideInset)
+
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: photoViewerLayout)
         collectionView.register(PhotoCell.self, forCellWithReuseIdentifier: PhotoCell.className)
         collectionView.delegate = self
         collectionView.isPagingEnabled = false
@@ -151,17 +148,13 @@ final class PhotoViewerViewController: UIViewController {
         setSelection()
     }
 
-    private func snapSelectedCenter() {
+    private func snapSelectedCenter(animationDuration: TimeInterval = 0.2) {
         guard !isUserScrolling else { return }
         guard let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
-        UIView.animate(withDuration: 0.2) {
-            if !self.isScrollingInMotion {
-                self.collectionView.collectionViewLayout.invalidateLayout()
-            }
-
-            self.isScrollingInMotion = false
-        } completion: { _ in
-            self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        isScrollingInMotion = false
+        UIView.animate(withDuration: animationDuration) {
+            self.collectionView.collectionViewLayout.invalidateLayout()
+            self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
         }
     }
 
@@ -177,19 +170,9 @@ extension PhotoViewerViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
         collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
-        snapSelectedCenter()
+        snapSelectedCenter(animationDuration: 0.35)
         setSelection()
         return false
-    }
-
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        if indexPath == collectionView.indexPathsForSelectedItems?.first {
-            if !isScrollingInMotion {
-                return .init(width: 44, height: 44)
-            }
-        }
-
-        return .init(width: 32, height: 44)
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

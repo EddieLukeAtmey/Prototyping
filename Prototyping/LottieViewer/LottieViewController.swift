@@ -13,8 +13,8 @@ import Lottie
 final class LottieViewController: UIViewController {
 
     private lazy var animationView: LottieAnimationView = {
-        let animationView = LottieAnimationView(filePath: Bundle.main.path(forResource: "Animation-lookback", ofType: "json") ?? "")
-        animationView.loopMode = .loop
+        let animationView = LottieAnimationView(filePath: Bundle.main.path(forResource: "Animation_Lookback", ofType: "json")!)
+        animationView.loopMode = .autoReverse
         animationView.contentMode = .scaleAspectFill
         animationView.animationSpeed = 1
         animationView.play()
@@ -24,8 +24,7 @@ final class LottieViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         animationView.then(view.addSubview).snp.makeConstraints {
-            $0.center.equalToSuperview()
-            $0.horizontalEdges.equalToSuperview()
+            $0.edges.equalToSuperview()
         }
     }
 }
