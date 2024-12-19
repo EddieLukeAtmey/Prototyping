@@ -143,9 +143,7 @@ final class PhotoViewerViewController: UIViewController {
         super.viewDidLayoutSubviews()
 
         guard collectionView.indexPathsForSelectedItems?.count == 0 else { return }
-        let firstIndexPath = IndexPath(item: 0, section: 0)
-        collectionView.selectItem(at: firstIndexPath, animated: false, scrollPosition: [])
-        setSelection()
+        selectItem(at: 0)
     }
 
     private func snapSelectedCenter(animationDuration: TimeInterval = 0.2) {
@@ -158,20 +156,28 @@ final class PhotoViewerViewController: UIViewController {
         }
     }
 
-    private func setSelection() {
-        guard let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
+    private func selectItem(at index: Int) {
 
-        let targetViewController = pageViewControllers[indexPath.item]
-        pageViewController.setViewControllers([targetViewController], direction: .forward, animated: false)
+        let direction: UIPageViewController.NavigationDirection
+        if let selectedIndexPath = collectionView.indexPathsForSelectedItems?.first, selectedIndexPath.item > index {
+            direction = .reverse
+        } else {
+            direction = .forward
+        }
+
+        let indexPath = IndexPath(item: index, section: 0)
+        collectionView.selectItem(at: indexPath, animated: false, scrollPosition: [])
+        let targetViewController = pageViewControllers[index]
+        pageViewController.setViewControllers([targetViewController], direction: direction, animated: true)
     }
 }
 
 extension PhotoViewerViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        collectionView.selectItem(at: indexPath, animated: true, scrollPosition: .centeredHorizontally)
+
+        selectItem(at: indexPath.item)
         snapSelectedCenter(animationDuration: 0.35)
-        setSelection()
         return false
     }
 
@@ -182,8 +188,7 @@ extension PhotoViewerViewController: UICollectionViewDelegateFlowLayout {
 
         let centerX = collectionView.contentOffset.x + collectionView.bounds.width / 2
         if let closestIndexPath = collectionView.indexPathForItem(at: CGPoint(x: centerX, y: collectionView.bounds.midY)) {
-            collectionView.selectItem(at: closestIndexPath, animated: false, scrollPosition: [])
-            setSelection()
+            selectItem(at: closestIndexPath.item)
 
             let feedbackGenerator = UIImpactFeedbackGenerator(style: .medium)
             feedbackGenerator.prepare()
