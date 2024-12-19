@@ -29,7 +29,12 @@ final class PhotoViewerViewController: UIViewController {
         .carrot.withAlphaComponent(0.7),
         .black.withAlphaComponent(0.7),
         .red.withAlphaComponent(0.7),
-        .green.withAlphaComponent(0.7)
+        .green.withAlphaComponent(0.7),
+
+        .systemPink.withAlphaComponent(0.3),
+        .orange.withAlphaComponent(0.2),
+        .cyan.withAlphaComponent(0.4),
+        .amethyst.withAlphaComponent(0.45)
     ] //.shuffled()
 
     lazy var dataSource = UICollectionViewDiffableDataSource<Int, UIColor>(collectionView: collectionView) { collectionView, indexPath, itemIdentifier in
@@ -51,8 +56,8 @@ final class PhotoViewerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        setupCollectionView()
         setupPageView()
+        setupCollectionView()
         reloadCollectionView()
     }
 
@@ -73,7 +78,7 @@ final class PhotoViewerViewController: UIViewController {
         collectionView.isPagingEnabled = false
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.decelerationRate = .fast // Smooth scrolling
-        collectionView.backgroundColor = .white.withAlphaComponent(0.5)
+        collectionView.backgroundColor = .clear
 
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints {
@@ -83,7 +88,7 @@ final class PhotoViewerViewController: UIViewController {
         }
 
         let middleIndicator = UIView()
-        middleIndicator.backgroundColor = .lightGray
+        middleIndicator.backgroundColor = .black
         view.addSubview(middleIndicator)
         middleIndicator.snp.makeConstraints {
             $0.top.equalTo(collectionView.snp.bottom)
@@ -127,8 +132,7 @@ final class PhotoViewerViewController: UIViewController {
         pageViewController.didMove(toParent: self)
 
         pageViewController.view.snp.makeConstraints {
-            $0.top.horizontalEdges.equalToSuperview()
-            $0.bottom.equalTo(collectionView.snp.top).offset(-20)
+            $0.edges.equalToSuperview()
         }
     }
 
@@ -153,10 +157,15 @@ final class PhotoViewerViewController: UIViewController {
         UIView.animate(withDuration: animationDuration) {
             self.collectionView.collectionViewLayout.invalidateLayout()
             self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
+        } completion: {  _ in
+            // This fix a bug sometime a cell doesn't render after the animation.
+            self.dataSource.apply(self.dataSource.snapshot(), animatingDifferences: false)
         }
     }
 
     private func selectItem(at index: Int) {
+
+        guard collectionView.indexPathsForSelectedItems?.first?.item != index else { return }
 
         let direction: UIPageViewController.NavigationDirection
         if let selectedIndexPath = collectionView.indexPathsForSelectedItems?.first, selectedIndexPath.item > index {
