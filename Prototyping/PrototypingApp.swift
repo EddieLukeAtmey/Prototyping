@@ -21,17 +21,14 @@ struct PrototypingApp: App {
 }
 
 struct MyViewControllerRepresentable: UIViewControllerRepresentable {
-    typealias UIViewControllerType = PhotoViewerViewController
+    typealias UIViewControllerType = UIViewController
 
     func makeUIViewController(context: Context) -> UIViewControllerType {
 //        return UIStoryboard(name: "StackButtonsViewController", bundle: nil).instantiateInitialViewController()!
-        return .init() // default VC
-//
-//        let root = CustomNavigationBackViewController().then { $0.loadViewIfNeeded() }
-//        let nav = UINavigationController(rootViewController: root)
-//        nav.pushViewController(CustomNavigationBackViewController(), animated: false)
-//        return nav
+//        .init()
 
+//        let root = CustomNavigationBackViewController().then { $0.loadViewIfNeeded() }
+        return UINavigationController(rootViewController: ChatViewController.init(viewModel: ChatViewModel()))
     }
 
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {

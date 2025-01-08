@@ -42,6 +42,10 @@
 		658CCFEB2C5B7FF400ABE656 /* Snapkit2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */; };
 		658F8E842CF5EA4B005183F2 /* SwiftUIViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658F8E832CF5EA4B005183F2 /* SwiftUIViewContainer.swift */; };
 		658F8E862CF5EBF2005183F2 /* AnyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658F8E852CF5EBF2005183F2 /* AnyUIView.swift */; };
+		659580412D2E7C570009FB64 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659580402D2E7C570009FB64 /* ChatViewController.swift */; };
+		659580432D2E7D010009FB64 /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659580422D2E7D010009FB64 /* ChatViewModel.swift */; };
+		659580462D2E7DA10009FB64 /* ChatConversationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659580452D2E7DA10009FB64 /* ChatConversationModel.swift */; };
+		659580482D2E80E40009FB64 /* ChatMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659580472D2E80E40009FB64 /* ChatMessageTableViewCell.swift */; };
 		65A0102A2CA2D8A4006DE40F /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = 65A010292CA2D8A4006DE40F /* PanModal */; };
 		65A0102C2CA2DF95006DE40F /* PanModalHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */; };
 		65BD595F2D11656600FC82AF /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 65BD595E2D11656600FC82AF /* Lottie */; };
@@ -99,6 +103,10 @@
 		658CCFEA2C5B7FF400ABE656 /* Snapkit2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapkit2ViewController.swift; sourceTree = "<group>"; };
 		658F8E832CF5EA4B005183F2 /* SwiftUIViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewContainer.swift; sourceTree = "<group>"; };
 		658F8E852CF5EBF2005183F2 /* AnyUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyUIView.swift; sourceTree = "<group>"; };
+		659580402D2E7C570009FB64 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		659580422D2E7D010009FB64 /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		659580452D2E7DA10009FB64 /* ChatConversationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConversationModel.swift; sourceTree = "<group>"; };
+		659580472D2E80E40009FB64 /* ChatMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageTableViewCell.swift; sourceTree = "<group>"; };
 		65A0102B2CA2DF95006DE40F /* PanModalHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanModalHostingController.swift; sourceTree = "<group>"; };
 		65BD59612D11657700FC82AF /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
 		65BD59712D12B70700FC82AF /* Animation_Lookback.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Animation_Lookback.json; sourceTree = "<group>"; };
@@ -268,6 +276,7 @@
 		6576D3E32C4F5A2B00761785 /* Prototyping */ = {
 			isa = PBXGroup;
 			children = (
+				6595803F2D2E7C3F0009FB64 /* ChatVC */,
 				65BD59602D11656E00FC82AF /* LottieViewer */,
 				65E7AB002D01609900363CBB /* SkeletonTableView */,
 				65E7AAFA2D000E8700363CBB /* PhotoViewer */,
@@ -311,6 +320,25 @@
 				658F8E852CF5EBF2005183F2 /* AnyUIView.swift */,
 			);
 			path = " SwiftUI+UIKit";
+			sourceTree = "<group>";
+		};
+		6595803F2D2E7C3F0009FB64 /* ChatVC */ = {
+			isa = PBXGroup;
+			children = (
+				659580442D2E7D940009FB64 /* Model */,
+				659580402D2E7C570009FB64 /* ChatViewController.swift */,
+				659580422D2E7D010009FB64 /* ChatViewModel.swift */,
+				659580472D2E80E40009FB64 /* ChatMessageTableViewCell.swift */,
+			);
+			path = ChatVC;
+			sourceTree = "<group>";
+		};
+		659580442D2E7D940009FB64 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				659580452D2E7DA10009FB64 /* ChatConversationModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		65A010272CA2D86D006DE40F /* PanModal */ = {
@@ -489,11 +517,13 @@
 				651E8FE92C6B3E4200F3A98D /* MyChartView.swift in Sources */,
 				651E8FEE2C6B595300F3A98D /* LineChartView.swift in Sources */,
 				65D78B302CCA55990096ADCC /* CustomToastView.swift in Sources */,
+				659580482D2E80E40009FB64 /* ChatMessageTableViewCell.swift in Sources */,
 				651E8FEC2C6B43CF00F3A98D /* UIColor+Extension.swift in Sources */,
 				6576D3E72C4F5A2B00761785 /* ContentView.swift in Sources */,
 				651B57E52CF0960D00C28D93 /* CustomNavigationBackViewController.swift in Sources */,
 				656E2F912CC66CBD00462888 /* ABProfilePictureViewController.swift in Sources */,
 				652D324A2CD0E78500DC54C6 /* PanModalHostingController2.swift in Sources */,
+				659580462D2E7DA10009FB64 /* ChatConversationModel.swift in Sources */,
 				655D71B42C64E92100C23B6E /* SwiftCombineViewController.swift in Sources */,
 				6508C9E32D0FD86700FEBA0C /* PhotoViewerCollectionViewLayout.swift in Sources */,
 				65D78B322CCA55990096ADCC /* ToastData.swift in Sources */,
@@ -502,6 +532,7 @@
 				651555992C9C3D8D0026C589 /* MyCustomView.swift in Sources */,
 				65E7AAFC2D000EAA00363CBB /* PhotoViewerViewController.swift in Sources */,
 				651B57E72CF09C1F00C28D93 /* CustomInteractivePopTransition.swift in Sources */,
+				659580432D2E7D010009FB64 /* ChatViewModel.swift in Sources */,
 				65A0102C2CA2DF95006DE40F /* PanModalHostingController.swift in Sources */,
 				6576D3F42C4F5A6800761785 /* MyViewController.swift in Sources */,
 				65E209552C89C9BA00E899BD /* Rotate3DImageView.swift in Sources */,
@@ -517,6 +548,7 @@
 				658F8E842CF5EA4B005183F2 /* SwiftUIViewContainer.swift in Sources */,
 				658CCFEB2C5B7FF400ABE656 /* Snapkit2ViewController.swift in Sources */,
 				6576D3E52C4F5A2B00761785 /* PrototypingApp.swift in Sources */,
+				659580412D2E7C570009FB64 /* ChatViewController.swift in Sources */,
 				658F8E862CF5EBF2005183F2 /* AnyUIView.swift in Sources */,
 				651E8FE72C6B134600F3A98D /* ChartViewController.swift in Sources */,
 				656E2F9A2CC7AE9700462888 /* ABSwitchButton.swift in Sources */,
