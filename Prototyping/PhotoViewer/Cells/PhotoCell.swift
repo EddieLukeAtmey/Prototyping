@@ -32,7 +32,7 @@ final class PhotoCell: UICollectionViewCell {
     }
 
     func configure(with color: UIColor, index: Int) {
-        imageView.backgroundColor = color
+        imageView.backgroundColor = color.withAlphaComponent(0.5)
         label.text = "\(index)"
     }
 }

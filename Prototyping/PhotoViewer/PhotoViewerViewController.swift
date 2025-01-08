@@ -29,7 +29,6 @@ final class PhotoViewerViewController: UIViewController {
         .carrot.withAlphaComponent(0.7),
         .black.withAlphaComponent(0.7),
         .red.withAlphaComponent(0.7),
-        .green.withAlphaComponent(0.7),
 
         .systemPink.withAlphaComponent(0.3),
         .orange.withAlphaComponent(0.2),
