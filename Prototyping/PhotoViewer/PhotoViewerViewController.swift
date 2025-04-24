@@ -98,8 +98,8 @@ final class PhotoViewerViewController: UIViewController {
     }
 
     private func setupPageView() {
-        pageViewController = CubePageViewController(transitionStyle: .scroll,
-                                                    navigationOrientation: .horizontal)
+        pageViewController = UIPageViewController(transitionStyle: .scroll,
+                                                  navigationOrientation: .horizontal)
 
         pageViewController.dataSource = self
         pageViewController.delegate = self

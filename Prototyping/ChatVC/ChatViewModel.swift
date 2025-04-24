@@ -30,24 +30,27 @@ final class ChatViewModel: ChatViewModelType {
 extension ChatViewModel: ChatViewInput {
     func loadConversation() {
         // Dummy data
-        let messages = (0..<100).map { _ in
-            let chatPerson: ChatPersonModel
-            if [0, 1].randomElement()! & 1 == 0 {
-                chatPerson = .receiving
-            } else {
-                chatPerson = .sending
-            }
-
-            let length = (10...50).randomElement()!
-
-            let message = String((0..<length).map { _ in
-                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".randomElement()!
-            })
-
-            return ChatMessageModel(sender: chatPerson, message: message)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .spellOut
+        let firsts = (1...10).compactMap {
+            ChatMessageModel(sender: randomChatPerson, message: formatter.string(from: ($0 as NSNumber))!)
         }
 
-        loadConversationSubject.send(ChatConversationModel(messages: messages))
+        let messages = firsts + (0..<10).map { _ in
+            String((0..<(10...50).randomElement()!).map { _ in
+                "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".randomElement()!
+            }).thenTransform {
+                ChatMessageModel(sender: randomChatPerson, message: $0 as String)
+            }
+        }
+
+        loadConversationSubject.send(ChatConversationModel(messages: messages.reversed()))
+    }
+
+    private var randomChatPerson: ChatPersonModel {
+        [0, 1].randomElement()! & 1 == 0
+        ? .receiving
+        : .sending
     }
 }
 

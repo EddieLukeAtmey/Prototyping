@@ -21,14 +21,18 @@ struct PrototypingApp: App {
 }
 
 struct MyViewControllerRepresentable: UIViewControllerRepresentable {
-    typealias UIViewControllerType = UIViewController
+//    typealias UIViewControllerType = UINavigationController
+    typealias UIViewControllerType = ParallaxViewController
 
     func makeUIViewController(context: Context) -> UIViewControllerType {
 //        return UIStoryboard(name: "StackButtonsViewController", bundle: nil).instantiateInitialViewController()!
-//        .init()
+        .init()
+//        .init(rootViewController: UIViewController()).then {
+//            $0.pushViewController(ParallaxViewController(), animated: false)
+//        }
 
 //        let root = CustomNavigationBackViewController().then { $0.loadViewIfNeeded() }
-        return UINavigationController(rootViewController: ChatViewController.init(viewModel: ChatViewModel()))
+//        return UINavigationController(rootViewController: ChatViewController.init(viewModel: ChatViewModel()))
     }
 
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {

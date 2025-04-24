@@ -11,6 +11,7 @@ final class ChatMessageTableViewCell: UITableViewCell {
     private var isOutgoing: Bool = true { didSet {
         rightContentConstaint.update(priority: isOutgoing ? .high : .low)
         senderLabel.textAlignment = isOutgoing ? .right : .left
+        contentStack.alignment = isOutgoing ? .trailing : .leading
     }}
 
     private let contentStack = UIStackView()
@@ -56,14 +57,16 @@ final class ChatMessageTableViewCell: UITableViewCell {
         contentStack.addArrangedSubview(senderLabel)
         contentStack.addArrangedSubview(messageBubbleView)
 
+        senderLabel.setContentHuggingPriority(.required, for: .vertical)
         // TODO: add time, read...
     }
 
     private func setupStyle() {
         senderLabel.font = .systemFont(ofSize: 12)
+        selectionStyle = .none
 
         // Transform upside down
-        transform = CGAffineTransform(rotationAngle: .pi)
+//        transform = .init(scaleX: 1, y: -1)
         messageBubbleView.layer.cornerRadius = 8
         messageBubbleView.backgroundColor = .cyan.withAlphaComponent(0.5)
     }
