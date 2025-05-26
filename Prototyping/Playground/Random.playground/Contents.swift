@@ -19,6 +19,9 @@ checkDefer()
 //
 //print(final.count)
 
+let v: Decimal = 1e9
+print("\(v)")
+
 class Parent {
     let x = "x"
     lazy var y = "y"

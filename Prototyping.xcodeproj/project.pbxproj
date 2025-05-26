@@ -116,6 +116,7 @@
 		656E2F932CC66D2C00462888 /* NSObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extension.swift"; sourceTree = "<group>"; };
 		656E2F992CC7AE9700462888 /* ABSwitchButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABSwitchButton.swift; sourceTree = "<group>"; };
 		656E2F9B2CC7B72800462888 /* CustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewController.swift; sourceTree = "<group>"; };
+		656EFFE82DCB217B009166B6 /* Regex.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Regex.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		6576D3E12C4F5A2B00761785 /* Prototyping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prototyping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6576D3E42C4F5A2B00761785 /* PrototypingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypingApp.swift; sourceTree = "<group>"; };
 		6576D3E62C4F5A2B00761785 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,6 +169,8 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		650BEDA82DDB413500E88E65 /* BottomSheet */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = BottomSheet; sourceTree = "<group>"; };
+		6582EB5A2DCA1C2E00DF4504 /* Label+Stack */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Label+Stack"; sourceTree = "<group>"; };
 		658B02B02D82D55000FD2204 /* TableViewController */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TableViewController; sourceTree = "<group>"; };
 		65A365622D9F7C03002E280B /* Test */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (65A365732D9F7C5A002E280B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 65A365742D9F7C5A002E280B /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Test; sourceTree = "<group>"; };
 		65A3656A2D9F7C4E002E280B /* PrototypingTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PrototypingTests; sourceTree = "<group>"; };
@@ -276,6 +279,7 @@
 				653ADD9C2C92DC79002C75A3 /* Random.playground */,
 				65AB8BE22D65EBD900C29AC2 /* Publishers.playground */,
 				65AF617B2D9E9C8E006AB768 /* Codable.playground */,
+				656EFFE82DCB217B009166B6 /* Regex.playground */,
 			);
 			path = Playground;
 			sourceTree = "<group>";
@@ -345,6 +349,8 @@
 		6576D3E32C4F5A2B00761785 /* Prototyping */ = {
 			isa = PBXGroup;
 			children = (
+				650BEDA82DDB413500E88E65 /* BottomSheet */,
+				6582EB5A2DCA1C2E00DF4504 /* Label+Stack */,
 				65A365992DA78546002E280B /* ParalaxView */,
 				65A365622D9F7C03002E280B /* Test */,
 				65EA42952D8D0610003DDE9C /* TextField */,
@@ -510,6 +516,8 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				650BEDA82DDB413500E88E65 /* BottomSheet */,
+				6582EB5A2DCA1C2E00DF4504 /* Label+Stack */,
 				658B02B02D82D55000FD2204 /* TableViewController */,
 				65A365622D9F7C03002E280B /* Test */,
 				65A365992DA78546002E280B /* ParalaxView */,
